@@ -9,6 +9,8 @@ namespace CrmBuisnessLogic
         public CrmContext() : base("DbConection") { }
 
         public DbSet<Check> Checks { get; set; }
+        
+        public DbSet<Customer> Customers { get; set; }
 
         public DbSet<Product> Products { get; set; }
 
