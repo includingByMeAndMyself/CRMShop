@@ -25,25 +25,25 @@ namespace Crm.UI.View
 
         private void ProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogProduct = new Catalog<Product>(_context.Products);
+            var catalogProduct = new Catalog<Product>(_context.Products, _context);
             catalogProduct.Show();
         }
 
         private void SellerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogSeller = new Catalog<Seller>(_context.Sellers);
+            var catalogSeller = new Catalog<Seller>(_context.Sellers, _context);
             catalogSeller.Show();
         }
 
         private void CustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogCustomer = new Catalog<Customer>(_context.Customers);
+            var catalogCustomer = new Catalog<Customer>(_context.Customers, _context);
             catalogCustomer.Show();
         }
 
         private void CheckToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogCheck = new Catalog<Check>(_context.Checks);
+            var catalogCheck = new Catalog<Check>(_context.Checks, _context);
             catalogCheck.Show();
         }
 
