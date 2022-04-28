@@ -5,18 +5,18 @@ using System.Windows.Forms;
 
 namespace Crm.UI.View
 {
-    public partial class CustomerForm : Form
+    public partial class SellerForm : Form
     {
-        public Customer Customer { get; set; }
+        public Seller Seller { get; set; }
 
-        public CustomerForm()
+        public SellerForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Customer = new Customer()
+            Seller = new Seller()
             {
                 Name = textBox1.Text
             };
